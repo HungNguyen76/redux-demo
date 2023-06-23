@@ -4,10 +4,7 @@ import { addProduct, updateProduct } from "../redux/product/action";
 
 export default function ProductForm() {
   const { selectedProduct } = useSelector((state) => state.productReducer);
-  console.log(
-    "🚀 ~ file: ProductForm.jsx:7 ~ ProductForm ~ selectedProduct:",
-    selectedProduct
-  );
+
   const [product, setProduct] = useState({
     id: "",
     name: "",
